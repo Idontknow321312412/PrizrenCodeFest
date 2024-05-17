@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #11d900;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.edit-btn,
+.delete-btn {
+    display: inline-block;
+    padding: 8px 12px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.edit-btn {
+    background-color: #3498db;
+}
+
+.delete-btn {
+    background-color: #e74c3c;
+}
+label {
+    font-size: 24px;
+    margin-left: 15px;
+}
+.add-item {
+    float: right;
+    margin-left: 250px;
+    height: 40px;
+    width: 120px;
+    background: #11d900;
+    color: #fff;
+    margin-right: 15px;
+    border-radius: 10px;
+}
+.picture {
+    width: 90px;
+    height: 80px;
+    border: none;
+}
+.picture_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.edit-button {
+    width: 120px;
+    height: 45px;
+    color: white;
+    background-color: rgb(15, 111, 255);
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+}
+.delete-button {
+    margin-left: 5px;
+    width: 120px;
+    height: 45px;
+    color: white;
+    background-color: rgb(255, 15, 15);
+    padding: 5px 8px 5px 8px;
+    border-radius: 5px;
+}

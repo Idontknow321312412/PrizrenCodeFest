@@ -1,0 +1,49 @@
+h2{
+    text-align: center;
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+label{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+input{
+    width: 40%;
+    margin-left: 29%;
+    margin-top: 20px;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 2%;
+}
+select{
+    width: 106%;
+    margin-left: 29%;
+    margin-top: 20px;
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 2%;
+    border: 2px solid black;
+}
+button{
+    width: 10%;
+    height: 25px;
+    border-radius: 10px;
+    background: #11D900;
+    margin-left: 45%;
+    color: #FFF;
+    border: #11D900;
+    margin-top: 30px;
+    cursor: pointer;
+}
+button:hover{
+    background: #13d102;
+    box-shadow: 0 0 2px 3px #12b803;
+}
+.margin_l{
+    margin-left: 29%;
+    width: 40%;
+    border-radius: 10px;
+    margin-top: 20px;
+}

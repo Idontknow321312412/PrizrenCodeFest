@@ -1,0 +1,689 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.navbar-c {
+    width: 100%;
+    height: 70px;
+    background-color: #ffe921;
+    position: fixed;
+    z-index: 999;
+}
+#nav-logo {
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    margin-left: 25px;
+    float: left;
+}
+#company-name {
+    color: #11d900;
+    font-size: 34px;
+    float: left;
+    display: flex;
+    line-height: 70px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+#city {
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: #11d900;
+    float: right;
+    cursor: pointer;
+}
+#submit1-btn {
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #11d900;
+    border-radius: 15px;
+    color: #fff;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+}
+
+.select-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default styles on some browsers */
+    cursor: pointer;
+}
+
+.select-form select::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track styles */
+.select-form select::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* Handle styles */
+.select-form select::-webkit-scrollbar-thumb {
+    background-color: #11d900;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+.select-form select::-webkit-scrollbar-thumb:hover {
+    background-color: #11d900;
+}
+
+.hamburger-icon {
+    position: absolute;
+    top: 33px;
+    right: 20px; /* Adjust the right distance based on your design */
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none; /* Initially hide on larger screens, show on smaller screens */
+    z-index: 60;
+}
+
+.line {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 6px 0;
+    z-index: 60;
+}
+
+/* Media query to show the hamburger icon on smaller screens */
+@media screen and (max-width: 768px) {
+    .hamburger-icon {
+        display: block;
+    }
+    .select-form {
+        display: none;
+    }
+    #nav-logo {
+        margin-left: 20px;
+    }
+}
+
+.sidebar {
+    position: fixed;
+    top: 69px;
+    right: -280px; /* Initially hide the sidebar off-screen */
+    height: 100%;
+    width: 280px;
+    background-color: #ffe921c7;
+    color: white;
+    padding: 20px;
+    transition: right 0.4s ease; /* Add a smooth transition effect */
+    z-index: 40;
+}
+
+/* Additional styles for the hamburger lines */
+.hamburger-icon .line {
+    width: 30px;
+    height: 5px; /* Updated line height to 5px */
+    background-color: #11d900;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+}
+
+.hamburger-icon.active .line-1 {
+    transform: rotate(-45deg) translate(-7.5px, 7.5px);
+}
+
+.hamburger-icon.active .line-2 {
+    opacity: 0;
+}
+
+.hamburger-icon.active .line-3 {
+    transform: rotate(45deg) translate(-7.5px, -7.5px);
+}
+.select-form2 {
+    z-index: 60;
+}
+#city2 {
+    color: #11d900;
+    border-radius: 25px;
+    width: 100%;
+    height: 60px;
+}
+#submit1-btn2 {
+    margin-top: 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 60px;
+    background-color: #11d900;
+}
+
+.select-form2 select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default styles on some browsers */
+    cursor: pointer;
+}
+
+.select-form2 select::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track styles */
+.select-form2 select::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* Handle styles */
+.select-form2 select::-webkit-scrollbar-thumb {
+    background-color: #11d900;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+.select-form2 select::-webkit-scrollbar-thumb:hover {
+    background-color: #11d900;
+}
+
+.top-c {
+    width: 100%;
+    height: 60vh;
+    background: linear-gradient(to top right, #ff9a7b, #ffed4d, #fff27b);
+}
+
+.content-c {
+    width: 80%;
+    height: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    background: #fff;
+    border-radius: 32px 32px 0 0;
+    margin-top: -22vh;
+    box-shadow: 0px 10px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.content-header {
+    width: 100%;
+    height: 80px;
+    padding-top: 15px;
+}
+.restaurant {
+    float: left;
+    font-size: 28px;
+    padding-left: 60px;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-family: inter;
+    width: 78%;
+}
+.shipping-icon {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    float: left;
+}
+.shipping-price {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    margin-left: 25px;
+    float: left;
+    font-family: inter;
+}
+.order-header {
+    width: 100%;
+    text-align: center;
+    font-family: inter;
+    font-size: 38px;
+    color: #11d900;
+    padding-top: 20px;
+}
+.order-c {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    height: 500px;
+    overflow-y: auto;
+    flex-direction: column;
+}
+.cart-item {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+.cart-item-name {
+    width: 70%;
+    height: 100%;
+    background: #fff;
+    color: black;
+    float: left;
+    display: flex;
+    align-items: center;
+    border-radius: 15px 0 0 15px;
+    padding-left: 15px;
+    font-family: inter;
+    font-size: 19px;
+}
+.cart-item-price {
+    width: 20%;
+    height: 100%;
+    background: #11d900;
+    color: #fff;
+    float: left;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 15px 0 0 15px;
+    font-family: inter;
+    font-size: 19px;
+}
+.remove-item {
+    width: 10%;
+    height: 100%;
+    border-radius: 0 15px 15px 0;
+    background: #ff0000;
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    font-size: 21px;
+}
+::-webkit-scrollbar {
+    width: 8px; /* Width of the scrollbar */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #11d900; /* Color of the scrollbar thumb */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #fff; /* Color of the scrollbar track */
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar:hover {
+    width: 8px; /* Width of the scrollbar */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #10b501; /* Color of the scrollbar thumb */
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track:hover {
+    background-color: #fff; /* Color of the scrollbar track */
+    border-radius: 5px;
+    cursor: pointer;
+}
+.select-form select::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track styles */
+.select-form select::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+/* Handle styles */
+.select-form select::-webkit-scrollbar-thumb {
+    background-color: #11d900;
+    border-radius: 4px;
+}
+
+/* Handle on hover */
+.select-form select::-webkit-scrollbar-thumb:hover {
+    background-color: #11d900;
+}
+.green-line {
+    width: 70%;
+    height: 3px;
+    background: #11d900;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+.shipping-amount {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    padding-top: 15px;
+}
+.shipping-price-o {
+    float: left;
+    font-size: 18px;
+    font-family: inter;
+}
+.shipping-price-a {
+    float: right;
+    font-size: 18px;
+    font-family: inter;
+}
+.total-amount {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-top: 5px;
+    padding-bottom: 50px;
+}
+.total-o {
+    float: left;
+    font-size: 18px;
+    font-family: inter;
+}
+.total-price {
+    float: right;
+    font-size: 18px;
+    font-family: inter;
+}
+.location {
+    width: 70%;
+    margin-top: 15px;
+    margin-left: 15%;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+}
+.phone-nr {
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 15px;
+    height: 50px;
+    border-radius: 15px;
+    border: 1px solid #fff;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.3);
+    margin-bottom: 25px;
+}
+input[type="text"]:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* Custom box-shadow on focus, adjust values as needed */
+    border: none; /* Remove any default border */
+}
+input[type="number"]:focus {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6); /* Custom box-shadow on focus, adjust values as needed */
+    border: none; /* Remove any default border */
+}
+.submit-order {
+    width: 300px;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #11d900;
+    background: #11d900;
+    border-radius: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+.center-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 80px;
+}
+
+.curved-border {
+    width: 100%;
+    height: 150px; /* You can adjust the height as needed */
+    background-color: #3498db; /* Default background color, you can edit this */
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+.custom-shape-divider-bottom-1703694413 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    padding-top: 3px;
+}
+
+.custom-shape-divider-bottom-1703694413 svg {
+    position: relative;
+    display: block;
+    width: calc(136% + 1.3px);
+    height: 77px;
+}
+
+.custom-shape-divider-bottom-1703694413 .shape-fill {
+    fill: #ffffff;
+}
+
+.footer-custom {
+    height: 150px;
+    width: 100%;
+    background-color: #4f4f4f;
+    margin-top: -2px;
+    padding: 25px 0 0 25px;
+}
+
+.footer-icon {
+    width: 50px;
+    height: 50px;
+    float: left;
+    margin-top: 5px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.devide {
+    height: 80px;
+    width: 3px;
+    background-color: #fff;
+    float: left;
+    margin-top: -10px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#language {
+    width: 300px;
+    height: 50px;
+    margin-left: 25px;
+    border-radius: 15px;
+    border: 3px solid white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+}
+option {
+    color: #11d900;
+    background-color: #fff;
+    cursor: pointer;
+}
+option:hover {
+    color: #11d900;
+    background-color: #e0e0e0;
+}
+
+@media screen and (max-width: 821px) {
+    #language {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-icon {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+@media screen and (max-width: 541px) {
+    .footer-custom {
+        padding: 25px 0 0 0;
+        height: 220px;
+    }
+    .footer-icon {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .devide {
+        display: none;
+    }
+    .icons-c {
+        display: flex;
+        justify-content: center;
+    }
+    #language {
+        margin-left: 0;
+        margin-top: 25px;
+        margin-bottom: 50px;
+    }
+    .Dropdown-c {
+        display: flex;
+        justify-content: center;
+    }
+}
+.footer-top {
+    margin-top: -50px;
+}
+@media screen and (max-width: 1024px) {
+    .content-c {
+        margin-top: -20vh;
+    }
+    .top-c {
+        height: 35vh;
+    }
+    .restaurant {
+        width: 72%;
+    }
+}
+@media screen and (max-width: 541px) {
+    .restaurant {
+        width: 60%;
+        padding-left: 25px;
+    }
+    .content-c {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .cart-item {
+        width: 86%;
+        margin-left: 7%;
+        margin-right: 7%;
+    }
+    .cart-item-name {
+        width: 60%;
+    }
+    .cart-item-price {
+        width: 25%;
+    }
+    .remove-item {
+        width: 15%;
+    }
+}
+@media screen and (max-width: 431px) {
+    .submit-order {
+        width: 70%;
+    }
+}
+@media screen and (max-width: 415px) {
+    .cart-item {
+        height: 45px;
+        width: 94%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+    .location {
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .phone-nr {
+        width: 88%;
+        margin-left: 6%;
+        margin-right: 6%;
+    }
+    .restaurant {
+        width: 100%;
+        text-align: center;
+        padding-left: 0;
+    }
+    .shipping-icon {
+        display: none;
+    }
+    .shipping-price {
+        display: none;
+    }
+}
+
+#order-items2 {
+    width: 80%;
+    margin-left: 10%;
+    cursor: pointer;
+}
+#order-items2 li {
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    padding: 10px;
+    list-style: none;
+}
+.order-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    height: 300px;
+    width: 300px;
+}
+.order-alert-p {
+    text-align: center;
+    padding-top: 5px;
+    font-size: 22px;
+}
+.order-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px;
+}
+.order-alert-img {
+    width: 150px;
+    height: 150px;
+}
+
+.input-alert {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    z-index: 9999;
+    height: 300px;
+    width: 300px;
+}
+.input-alert-p {
+    text-align: center;
+    padding: 5px;
+    font-size: 20px;
+}
+.input-alert-img {
+    width: 160px;
+    height: 160px;
+}

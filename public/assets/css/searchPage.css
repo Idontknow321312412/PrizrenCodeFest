@@ -1,0 +1,416 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navbar-c{
+    width: 100%;
+    height: 70px;
+    background-color: #FFE921;
+    position: fixed;
+    z-index: 999;
+}
+#nav-logo{
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    margin-left: 25px;
+    float: left;
+}
+#company-name{
+    color: #11D900;
+    font-size: 32px;
+    float: left;
+    display: flex;
+    line-height: 70px;
+    margin-left: 10px;
+    font-weight: 500;
+}
+
+#city{
+    width: 300px;
+    height: 50px;
+    margin-top: 10px;
+    border-radius: 15px;
+    color: #11D900;
+    float: right;
+    cursor: pointer;
+}
+#submit1-btn{
+    width: 100px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #11D900;
+    border-radius: 15px;
+    color: #FFF;
+    cursor: pointer;
+    float: right;
+    margin-right: 15px;
+}
+
+.select-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default styles on some browsers */
+    cursor: pointer;
+  }
+
+.select-form select::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track styles */
+  .select-form select::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Handle styles */
+  .select-form select::-webkit-scrollbar-thumb {
+    background-color: #11D900;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  .select-form select::-webkit-scrollbar-thumb:hover {
+    background-color: #11D900;
+  }
+
+
+
+  .hamburger-icon {
+    position: absolute;
+    top: 33px;
+    right: 20px; /* Adjust the right distance based on your design */
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none; /* Initially hide on larger screens, show on smaller screens */
+    z-index: 60;
+  }
+  
+  .line {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+    margin: 6px 0;
+    z-index: 60;
+  }
+  
+  /* Media query to show the hamburger icon on smaller screens */
+  @media screen and (max-width: 768px) {
+    .hamburger-icon {
+      display: block;
+    }
+    .select-form{
+        display: none;
+    }
+    #nav-logo{
+        margin-left: 20px;
+    }
+  }
+
+
+  .sidebar {
+    position: fixed;
+    top: 69px;
+    right: -280px; /* Initially hide the sidebar off-screen */
+    height: 100%;
+    width: 280px;
+    background-color: #ffe921c7;
+    color: white;
+    padding: 20px;
+    transition: right 0.4s ease; /* Add a smooth transition effect */
+    z-index: 40;
+  }
+  
+  /* Additional styles for the hamburger lines */
+.hamburger-icon .line {
+    width: 30px;
+    height: 5px; /* Updated line height to 5px */
+    background-color: #11D900;
+    margin: 6px 0;
+    transition: transform 0.3s ease;
+  }
+  
+  .hamburger-icon.active .line-1 {
+    transform: rotate(-45deg) translate(-7.5px, 7.5px);
+  }
+  
+  .hamburger-icon.active .line-2 {
+    opacity: 0;
+  }
+  
+  .hamburger-icon.active .line-3 {
+    transform: rotate(45deg) translate(-7.5px, -7.5px);
+  }
+  .select-form2{
+    z-index: 60;
+  }
+  #city2{
+    color: #11D900;
+    border-radius: 25px;
+    width: 100%;
+    height: 60px;
+  }
+  #submit1-btn2{
+    margin-top: 25px;
+    border-radius: 25px;
+    width: 100%;
+    height: 60px;
+    background-color: #11D900;
+  }
+
+  .select-form2 select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none; /* Remove default styles on some browsers */
+    cursor: pointer;
+  }
+
+.select-form2 select::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track styles */
+  .select-form2 select::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+  }
+  
+  /* Handle styles */
+  .select-form2 select::-webkit-scrollbar-thumb {
+    background-color: #11D900;
+    border-radius: 4px;
+  }
+  
+  /* Handle on hover */
+  .select-form2 select::-webkit-scrollbar-thumb:hover {
+    background-color: #11D900;
+  }
+
+
+  .title{
+    text-align: center;
+    font-size: 36px;
+    font-family: inria serif;
+    color: #11D900;
+    padding-top: 100px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+  }
+
+  .title-2{
+    text-align: center;
+    font-size: 36px;
+    font-family: inria serif;
+    color: #11D900;
+    padding-top: 50px;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-bottom: 50px;
+  }
+
+
+
+  .height-c{
+    height: 300px;
+}
+.h-custom{
+    height: 200px;
+    width: 100%;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.location-name{
+    margin-top: 5px;
+    margin-left: 5px;
+    font-size: 40px;
+    font-family: Inria serif;
+}
+.email{
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: inria serif;
+    color: #11D900;
+}
+p{
+    line-height: 1;
+}
+
+.text-c{
+    margin-top: 20px;
+    margin-bottom: 45px;
+    color: #11D900;
+    font-size: 48px;
+    text-align: center;
+    font-family: inria serif;
+}
+.margins{
+  margin-top: 5vh;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+
+.curved-border {
+  width: 100%;
+  height: 150px; /* You can adjust the height as needed */
+  background-color: #3498db; /* Default background color, you can edit this */
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+}
+
+.custom-shape-divider-bottom-1703694413 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  padding-top: 3px;
+}
+
+.custom-shape-divider-bottom-1703694413 svg {
+  position: relative;
+  display: block;
+  width: calc(136% + 1.3px);
+  height: 77px;
+}
+
+.custom-shape-divider-bottom-1703694413 .shape-fill {
+  fill: #FFFFFF;
+}
+
+.footer-custom {
+  height: 150px;
+  width: 100%;
+  background-color: #4F4F4F;
+  margin-top: -2px;
+  padding: 25px 0 0 25px;
+}
+
+.footer-icon{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-top: 5px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.devide{
+  height: 80px;
+  width: 3px;
+  background-color: #FFF;
+  float: left;
+  margin-top: -10px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+#language{
+  width: 300px;
+  height: 50px;
+  margin-left: 25px;
+  border-radius: 15px;
+  border: 3px solid white;
+  background-color: transparent;
+  color: #FFF;
+  cursor: pointer;
+}
+option{
+  color: #11D900;
+  background-color: #FFF;
+  cursor: pointer;
+}
+option:hover{
+  color: #11D900;
+  background-color: #e0e0e0;
+}
+
+
+@media screen and (max-width: 821px) {
+  #language{
+      width: 250px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer-icon{
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+}
+@media screen and (max-width: 541px) {
+  .footer-custom{
+      padding: 25px 0 0 0;
+      height: 220px;
+  }
+  .footer-icon{
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+  .devide{
+      display: none;
+  }
+  .icons-c{
+      display: flex;
+      justify-content: center;
+  }
+  #language{
+      margin-left: 0;
+      margin-top: 25px;
+      margin-bottom: 50px;
+
+  }
+  .Dropdown-c{
+      display: flex;
+      justify-content: center;        
+  }
+}
+
+
+::-webkit-scrollbar {
+  width: 8px;/* Width of the scrollbar */
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #11D900; /* Color of the scrollbar thumb */
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 5px; 
+}
+
+::-webkit-scrollbar:hover {
+  width: 8px;/* Width of the scrollbar */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #10b501; /* Color of the scrollbar thumb */
+  border-radius: 5px; 
+  cursor: pointer;
+}
+
+::-webkit-scrollbar-track:hover {
+  background-color: #f1f1f1; /* Color of the scrollbar track */
+  border-radius: 5px; 
+  cursor: pointer;
+}
+.Message{
+  padding-top: 150px;
+  padding-bottom: 400px;
+  margin-left: 25px;
+  height: 100px;
+  font-size: 26px;
+  color: #11D900;
+}
